@@ -1,9 +1,17 @@
 console.log("Hello, World");
 
 function passChecking() {
-    let result = document.getElementById("inputedPassword").value;
-    document.getElementById("demo").innerText = result;
-    console.log(result);
+    let password = "열려라 참깨"
+    let userInput = document.getElementById("inputedPassword").value;
+    document.getElementById("demo").innerText = userInput;
+    let result = (userInput == password)
+
+    if (result == true) {
+        opening()
+    } else {
+        closing()
+    }
+    
 }
 
 function opening() {
